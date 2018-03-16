@@ -1,5 +1,10 @@
 This is a dictionary of data elements
 Data Element 1. Fuelling Point Identifier
-workstationID definition, decsrciption, etc.,
+workstationID: definition, description, etc.,
+aliais (posNumber), posId
+List of APIS this element is used : API Name 1 
+
+
+
 
 
