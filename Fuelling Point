@@ -3,7 +3,7 @@ Definition: the unique identified on a forecourt of a fuelling point. Further df
 Description: A Fuelling Point Identifer. 
 Data Type: string (fixed length of 8 characters - filled with trailing spaces) 
 Examples: "Pump 1   ","FP1     ","10      ","PUMP05  "
-aliais (FuelingPointNumber, Pump Number, posNumber), posId
+aliais (FuelingPointNumber, Pump Number, Pump Number, FPIdentifier)
 This Data element is used in the following IFSF APIs. 
 ReserveFP, FreeFP, ApproveFP, CancelFP and FPTransaction
 
