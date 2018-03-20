@@ -1,7 +1,7 @@
 Name: fuellingPointID
 Definition: the unique identified on a forecourt of a fuelling point. Further definition is given in the IFSF Glossary.
 Description: A Fuelling Point Identifer. 
-Data Type: string (max length of 8 alphanumeric characters - filled with trailing spaces) 
+Data Type: string (max length of 8 alphanumeric characters) 
 Examples: "Pump 1","FP1","10","PUMP05"
 aliais (FuellingPointNumber, Pump Number, PumpNbr, PumpID, PumpIdentifier, FPIdentifier, FPID)
 This Data element is used in the following IFSF APIs. 
