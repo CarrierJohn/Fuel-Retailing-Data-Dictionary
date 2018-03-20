@@ -1,0 +1,19 @@
+latitude*	number($double)
+minimum: -90
+maximum: 90
+Latitude (degree range -90 to +90) with positive values for N latitude and negative for S latitude.
+
+longitude*	number($double)
+minimum: -180
+maximum: 180
+Longitude (degree range -180 to +180) positive values for E of the prime meridian, and negative values W longitude.
+
+angleUOM	string
+default: decimal degrees
+Radians and degrees are pure decimal numbers. Values expressed in “decimal dd.mm.ss” units have the numeric format “28.3050” representing 28 degrees 30 minutes and 50 seconds. Both the minutes and seconds must be two characters with a numeric range between 00 to 60.
+
+Enum:
+Array [ 3 ]
+datum	string
+default: WGS84
+geodetic reference system used for positional measurement
