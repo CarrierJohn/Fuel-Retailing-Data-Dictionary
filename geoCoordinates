@@ -1,3 +1,16 @@
+Data Object Name:   site.geoCoordinates
+Definition:         The geoCoordinates are a unique identifier of a precise geographic location
+                    on the earth, usually expressed in alphanumeric characters.
+Description:        geoCoordinates is an object that requires four properties in order to precisely define a location on
+                    the earth; latitude, longitude, the units of measurement being used and the geodetic reference system 
+                    being used.
+              
+Alias:              GPSCoordinates, 
+
+Where used:         GeoCoordinates is used within the following IFSF APIs. (Links will be provided when I find out how!)
+                    IFSF Wet Stock Management Agent GET /sites/{siteID}
+                    IFSF Wet Stock Management Agent GET /sites/{siteID}/reconciliationReports
+
 latitude*	number($double)
 minimum: -90
 maximum: 90
@@ -10,7 +23,9 @@ Longitude (degree range -180 to +180) positive values for E of the prime meridia
 
 angleUOM	string
 default: decimal degrees
-Radians and degrees are pure decimal numbers. Values expressed in “decimal dd.mm.ss” units have the numeric format “28.3050” representing 28 degrees 30 minutes and 50 seconds. Both the minutes and seconds must be two characters with a numeric range between 00 to 60.
+Radians and degrees are pure decimal numbers. Values expressed in “decimal dd.mm.ss” units have the numeric format “28.3050”
+representing 28 degrees 30 minutes and 50 seconds. Both the minutes and seconds must be two characters with a numeric range
+between 00 to 60.
 
 Enum:
 Array [ 3 ]
