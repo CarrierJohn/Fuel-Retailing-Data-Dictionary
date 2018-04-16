@@ -11,6 +11,50 @@ Where used:         GeoCoordinates is used within the following IFSF APIs. (Link
                     IFSF Wet Stock Management Agent GET /sites/{siteID}
                     IFSF Wet Stock Management Agent GET /sites/{siteID}/reconciliationReports
 
+
+
+    core.geo.geoCoordinates:
+      properties:
+        latitude:
+          minimum: -90
+          maximum: 90
+          format: double
+          description: >-
+            Latitude (degree range -90 to +90) with positive values for N
+            latitude and negative for S latitude.
+          type: number
+        longitude:
+          minimum: -180
+          maximum: 180
+          format: double
+          description: >-
+            Longitude (degree range -180 to +180) positive values for E of the
+            prime meridian, and negative values W longitude.
+          type: number
+        angleUOM:
+          default: decimal degrees
+          description: >-
+            Radians and degrees are pure decimal numbers. Values expressed in
+            "decimal dd.mm.ss" units have the numeric format "28.3050"
+            representing 28 degrees 30 minutes and 50 seconds. Both the minutes
+            and seconds must be two characters with a numeric range between 00
+            to 60.
+          enum:
+            - radians
+            - decimal degrees
+            - decimal dd.mm.ss
+          type: string
+        datum:
+          default: WGS84
+          description: geodetic reference system used for positional measurement
+          type: string
+      required:
+        - latitude
+        - longitude
+      type: object
+
+
+
 latitude*	number($double)
 minimum: -90
 maximum: 90
