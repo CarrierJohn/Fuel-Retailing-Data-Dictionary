@@ -1,0 +1,41 @@
+Data Object Name:   site.siteID
+Definition:         The siteID is the "implementation wide" unique identifier of a fuel retailing premises. Unique in this
+                    context means unique within the current system boundary and not globally (or even unique within a brand).
+Description:        siteID is an object that requires two properties; a type and an id. The type is an enumeration of several
+values that are used to identify the fuel retail premises. E.g. the type could be "CO-CO" (company owned - company operated)
+with an id of "502146". The combination of type and id is unique within the implementation context.
+Alias:              
+
+Where used:         siteID is used within the following IFSF APIs. (Links will be provided when I find out how!)
+                    IFSF Wet Stock Management Agent GET /sites/{siteID}
+                    IFSF Wet Stock Management Agent GET /sites/{siteID}/reconciliationReports
+                    IFSF Wet Stock Management Agent GET /sites/{siteID}/reconciliationReports/{reportID}
+                    IFSF Wet Stock Management Agent GET /sites/{siteID}/turnoverReports
+                    IFSF Wet Stock Management Agent GET /sites/{siteID}/turnoverReports/{reportID}
+                    IFSF Wet Stock Management Agent GET /sites/{siteID}/tankMovementReports
+                    IFSF Wet Stock Management Agent GET /sites/{siteID}/tankMovementReports/{reportID}
+                    IFSF Wet Stock Management Agent GET /sites/{siteID}/tankStockReports
+                    IFSF Wet Stock Management Agent GET /Sites/{siteID}/tankStockReports/{reportID}
+                    etc.,
+    
+YAML code: - The text between brackets can be cut and paste into the Online Swagger editor (with a hyper link)
+[
+    core.site.siteID:
+      properties:
+        type:
+          maxLength: 10
+          type: string
+        id:
+          maxLength: 20
+          type: string
+      required:
+        - type
+        - id
+      type: object
+]
+example: In this example a site has a unique SAP identifier and a unique SHIPTO identifier. Both id's are 6 numeric digits.
+  "siteIDs" : [
+    { "type":"SAP", "id":"123456" },
+    { "type":"SHIPTO", "id":"567890" } ]
+    
+    
