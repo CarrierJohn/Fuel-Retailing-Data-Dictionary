@@ -2,17 +2,18 @@ Data Object Name:   site.geoCoordinates
 Definition:         The geoCoordinates are a unique identifier of a precise geographic location
                     on the earth, usually expressed in alphanumeric characters.
 Description:        geoCoordinates is an object that requires four properties in order to precisely define a location on
-                    the earth; latitude, longitude, the units of measurement being used and the geodetic reference system 
-                    being used.
+                    the earth; latitude, longitude, the units of measurement being used (angleUOM) and the geodetic
+                    reference system (datum) being used.
+Properties:         latitude, longitude, angleUOM and datum                   
               
-Alias:              GPSCoordinates, 
+Alias:              GPSCoordinates 
 
-Where used:         GeoCoordinates is used within the following IFSF APIs. (Links will be provided when I find out how!)
+Where used:         geoCoordinates is used within the following IFSF APIs. (Links will be provided when I find out how!)
                     IFSF Wet Stock Management Agent GET /sites/{siteID}
                     IFSF Wet Stock Management Agent GET /sites/{siteID}/reconciliationReports
 
-
-
+YAML code: - The text between brackets can be cut and paste into the Online Swagger editor (with a hyper link)
+[
     core.geo.geoCoordinates:
       properties:
         latitude:
@@ -52,6 +53,7 @@ Where used:         GeoCoordinates is used within the following IFSF APIs. (Link
         - latitude
         - longitude
       type: object
+]
 
 
 
