@@ -1,0 +1,23 @@
+Data Element Name:    fuelingPointID
+Definition:           The unique identifier on a forecourt (fuel retailing premise) of a fuelling point. Further definition
+                      is given in the IFSF Glossary (link ?).
+Description:          A Fuelling Point Identifer is the method of identifying a unique fuel service delivery point for
+                      (re-)fuelling a vehicle fuel tank or other fuel container. By definition one vehicle tank/container
+                      can be refuelled at a time irrespective of the number of nozzles (or electric cable connectors 
+                      for electric vehciles)
+Data Type:            string (max length of 8 alphanumeric characters; an alphanumeric charater is [A-Z, a-z, 0-9]) 
+Examples:             "Pump 1","FP1","10","PUMP05"
+Alias:                FuelingPointNumber, PumpNumber, PumpNbr, PumpID, PumpIdentifier, FPIdentifier, FPID
+
+This Data element is used in the following IFSF APIs. (examples only not yet defined)
+                      IFSF Mobile Payment API Agent PUT/reserveFPs/{fuelingPointID}
+                      IFSF Mobile Payment API Agent PUT/freeFPs/{fuelingPointID}
+                      IFSF Mobile Payment API Agent PUT/approveFPs/{fuelingPointID}
+                      IFSF Mobile Payment API Agent PUT/cancelFPs/{fuelingPointID}
+                      IFSF Mobile Payment API Agent PUT/FPTransaction/{fuelingPointID}
+                      
+
+
+
+
+
