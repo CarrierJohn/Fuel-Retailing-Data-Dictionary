@@ -4,7 +4,8 @@ Definition:         The siteID is the "implementation wide" unique identifier of
 Description:        siteID is an object that requires two properties; a type and an id. The type is an enumeration of several
 values that are used to identify the fuel retail premises. E.g. the type could be "CO-CO" (company owned - company operated)
 with an id of "502146". The combination of type and id is unique within the implementation context.
-Alias:              
+Alias:              siteID is also known within fuel retailing as RetailStoreID, SiteNumber, SiteIdentifier
+
 
 Where used:         siteID is used within the following IFSF APIs. (Links will be provided when I find out how!)
                     IFSF Wet Stock Management Agent GET /sites/{siteID}
