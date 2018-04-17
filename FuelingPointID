@@ -19,6 +19,13 @@ APIs                  This Data element is used in the following IFSF APIs. (inv
                       IFSF Mobile Payment API Agent PUT/reserveFPs/{fuelingPointID}
 
 
+
+
+
+Example:              
+  "fuelingPointID" : [
+    { "type":"SAP", "id":"123456" },
+    { "type":"SHIPTO", "id":"567890" } ]
                       
 
 
