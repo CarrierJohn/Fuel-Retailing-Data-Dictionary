@@ -7,14 +7,18 @@ Description:          A Fuelling Point Identifer is the method of identifying a 
                       for electric vehciles)
 Data Type:            string (max length of 8 alphanumeric characters; an alphanumeric charater is [A-Z, a-z, 0-9]) 
 Examples:             "Pump 1","FP1","10","PUMP05"
-Alias:                FuelingPointNumber, PumpNumber, PumpNbr, PumpID, PumpIdentifier, FPIdentifier, FPID
+Alias:                FPIdentifier, FPID, FuelingPointNumber, PumpIdentifier, PumpNbr, PumpNumber, PumpID 
 
-This Data element is used in the following IFSF APIs. (examples only not yet defined)
-                      IFSF Mobile Payment API Agent PUT/reserveFPs/{fuelingPointID}
-                      IFSF Mobile Payment API Agent PUT/freeFPs/{fuelingPointID}
+Where used:
+object:               used in object......
+APIs                  This Data element is used in the following IFSF APIs. (invented Examples only not yet defined)
                       IFSF Mobile Payment API Agent PUT/approveFPs/{fuelingPointID}
                       IFSF Mobile Payment API Agent PUT/cancelFPs/{fuelingPointID}
                       IFSF Mobile Payment API Agent PUT/FPTransaction/{fuelingPointID}
+                      IFSF Mobile Payment API Agent PUT/freeFPs/{fuelingPointID}                      
+                      IFSF Mobile Payment API Agent PUT/reserveFPs/{fuelingPointID}
+
+
                       
 
 
