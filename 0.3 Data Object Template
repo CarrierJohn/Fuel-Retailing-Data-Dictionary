@@ -1,4 +1,4 @@
-Data Object Name:   objectName         ojectname must comply with naming conventions as described in JSON style Guide.
+Data Object Name:   objectName         ojectName must comply with naming conventions as described in JSON style Guide.
 Definition:         Object definition. This is a short consise definition of the object.
 Description:        Object description. This is a full and unabiguous description of the object.
 Alias:              An alphabetic list of aliases.siteID is also known within fuel retailing as RetailStoreID, SiteNumber, SiteIdentifier
