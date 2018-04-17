@@ -7,7 +7,7 @@ Description:        geoCoordinates is an object that requires four properties in
                     reference system (datum) being used.
 Properties:         latitude, longitude, angleUOM and datum                   
               
-Alias:              GPSCoordinates 
+Alias:              coordinates, geo-coordinates, GPSCoordinates 
 
 Where used:         geoCoordinates is used within the following IFSF APIs. (Links will be provided when I find out how!)
                     IFSF Wet Stock Management Agent GET /sites/{siteID}
@@ -80,7 +80,7 @@ representing 28 degrees 30 minutes and 50 seconds. Both the minutes and seconds 
 between 00 to 60.
 
 Enum:
-Array [ 3 ]
+Array [ 6 ]
 datum	string
 default: WGS84
 geodetic reference system used for positional measurement
