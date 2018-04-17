@@ -1,0 +1,35 @@
+Data Element Name:  elementName         Element name must comply with naming conventions as described in JSON Style Guide.
+Definition:         Element definition. This is a short consise definition of the data element.
+Description:        Elemen description. This is a full and unambiguous description of the object.
+Alias:              An alphabetic list of aliases. Aliases are other eleemnt names which convey EXCATLy the same meaning
+
+Where used:         A list of all IFSF APIs and Data Objects that use this element is given in alphabetic order.
+Objects:            e.g. this element is used in data object "dataObject"
+                    etc.,
+APIs:               IFSF Wet Stock Management Agent GET /sites/{siteID}
+                    IFSF Wet Stock Management Agent GET /sites/{siteID}/reconciliationReports
+                    etc.,
+    
+YAML code:          - The text between brackets can be cut and paste into the Online Swagger editor (include a hyper link)
+                    This is exmple YAML code for data element fuellinPointID
+[
+    core.site.siteID:       
+      properties:
+        type:
+          maxLength: 10
+          type: string
+        id:
+          maxLength: 20
+          type: string
+      required:
+        - type
+        - id
+      type: object
+]
+
+Example:          One or more examples provided to give full clarification of the object.
+                  e.g. for siteID this example has a unique SAP identifier and a unique SHIPTO identifier. 
+                  Both id's are 6 numeric digits.
+  "siteIDs" : [
+    { "type":"SAP", "id":"123456" },
+    { "type":"SHIPTO", "id":"567890" } ]
