@@ -2,8 +2,9 @@ Data Object Name:   site.siteID
 Definition:         The siteID is the "implementation wide" unique identifier of a fuel retailing premises. Unique in this
                     context means unique within the current system boundary and not globally (or even unique within a brand).
 Description:        siteID is an object that requires two properties; a type and an id. The type is an enumeration of several
-values that are used to identify the fuel retail premises. E.g. the type could be "CO-CO" (company owned - company operated)
-with an id of "502146". The combination of type and id is unique within the implementation context.
+                    values that are used to identify the fuel retail premises. E.g. the type could be "CO-CO" (company owned
+                    - company operated) with an id of "502146". The combination of type and id is unique within the
+                    implementation context.
 Alias:              siteID is also known within fuel retailing as RetailStoreID, SiteNumber, SiteIdentifier
 
 
