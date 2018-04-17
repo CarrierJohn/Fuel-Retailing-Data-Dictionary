@@ -1,6 +1,7 @@
 Data Object Name:   site.geoCoordinates
-Definition:         The geoCoordinates are a unique identifier of a precise geographic location
-                    on the earth, usually expressed in alphanumeric characters.
+Definition:         The geoCoordinates are a unique identifier of a precise geographic location on the earth, usually 
+                    expressed in alphanumeric characters. geoCoordinates in this context, are points of intersection 
+                    in a grid system. 
 Description:        geoCoordinates is an object that requires four properties in order to precisely define a location on
                     the earth; latitude, longitude, the units of measurement being used (angleUOM) and the geodetic
                     reference system (datum) being used.
@@ -48,14 +49,19 @@ YAML code: - The text between brackets can be cut and paste into the Online Swag
         datum:
           default: WGS84
           description: geodetic reference system used for positional measurement
+          enum:
+            - HD72
+            - NAD27
+            - NAD83
+            - OSGB36
+            - S42
+            - WGS84
           type: string
       required:
         - latitude
         - longitude
       type: object
 ]
-
-
 
 latitude*	number($double)
 minimum: -90
