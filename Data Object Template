@@ -1,0 +1,37 @@
+Data Object Name:   objectName         ojectname must comply with naming conventions as described in JSON style Guide.
+Definition:         Object definition. This is a short consise definition of the object.
+Description:        Object description. This is a full and unabiguous description of the object.
+Alias:              An alphabetic list of aliases.siteID is also known within fuel retailing as RetailStoreID, SiteNumber, SiteIdentifier
+
+
+Where used:         A list of all IFSF APIs that use this element is gvien in alphabetic order.
+                    e.g. 
+                    IFSF Wet Stock Management Agent GET /sites/{siteID}
+                    IFSF Wet Stock Management Agent GET /sites/{siteID}/reconciliationReports
+                    etc.,
+    
+YAML code:          - The text between brackets can be cut and paste into the Online Swagger editor (include a hyper link)
+                    This is exmple YAML code for data object siteID
+[
+    core.site.siteID:       
+      properties:
+        type:
+          maxLength: 10
+          type: string
+        id:
+          maxLength: 20
+          type: string
+      required:
+        - type
+        - id
+      type: object
+]
+
+Example:          One or more examples provided to give full clarification of the object.
+                  e.g. for siteID this example has a unique SAP identifier and a unique SHIPTO identifier. 
+                  Both id's are 6 numeric digits.
+  "siteIDs" : [
+    { "type":"SAP", "id":"123456" },
+    { "type":"SHIPTO", "id":"567890" } ]
+    
+    
