@@ -18,17 +18,24 @@ APIs                  This Data element is used in the following IFSF APIs. (inv
                       IFSF Mobile Payment API Agent PUT/freeFPs/{fuelingPointID}                      
                       IFSF Mobile Payment API Agent PUT/reserveFPs/{fuelingPointID}
 
-
-
-
+YAML code:          - The text between brackets can be cut and paste into the Online Swagger editor (include a hyper link)
+                    This is exmple YAML code for data element fuelingPointID
+[
+    core.fuel.fuelingPointID:       
+      maxLength: 8
+      type: string
+      required:
+        - type
+]
 
 Example:              
-  "fuelingPointID" : [
-    { "type":"SAP", "id":"123456" },
-    { "type":"SHIPTO", "id":"567890" } ]
-                      
+  "fuelingPointID" : "Pump 1"
+  "fuelingPointID" : "FP1"
+  "fuelingPointID" : "10"
+  "fuelingPointID" : "PUMP05"
 
-
-
-
-
+The following are not supported nativvely
+  "fuelingPointID" : "Pump+1"       illegal character +
+  "fuelingPointID" : "Pump$1"       illegal character $
+  "fuelingPointID" : "Pump#1"       illegal character #
+  "fuelingPointID" : "Pumpnumber1"  string exceeds 8 characters... for real-time processing it may be truncated to "Pumpnumb"
