@@ -1,22 +1,23 @@
 Data Element Name:    fuelingPointID
-Definition:           The unique identifier on a forecourt (fuel retailing premise) of a fuelling point. Further definition
+Definition:           The unique identifier on a forecourt (fuel retailing premise) of a fueling point. Further definition
                       is given in the IFSF Glossary (link ?).
-Description:          A Fuelling Point Identifer is the method of identifying a unique fuel service delivery point for
-                      (re-)fuelling a vehicle fuel tank or other fuel container. By definition one vehicle tank/container
+Description:          A Fueling Point Identifer is the method of identifying a unique fuel service delivery point for
+                      (re-)fueling a vehicle fuel tank or other fuel container. By definition one vehicle tank/container
                       can be refuelled at a time irrespective of the number of nozzles (or electric cable connectors 
                       for electric vehciles)
-Data Type:            string (max length of 8 alphanumeric characters; an alphanumeric charater is [A-Z, a-z, 0-9]) 
+Data Type:            string (max length of 8 alphanumeric characters; an alphanumeric charater is [A-Z, a-z, 0-9])
+                      Regular Expression - 
 Examples:             "Pump 1","FP1","10","PUMP05"
 Alias:                FPIdentifier, FPID, FuelingPointNumber, PumpIdentifier, PumpNbr, PumpNumber, PumpID 
 
 Where used:
 object:               used in object......
-APIs                  This Data element is used in the following IFSF APIs. (invented Examples only not yet defined)
-                      IFSF Mobile Payment API Agent PUT/approveFPs/{fuelingPointID}
-                      IFSF Mobile Payment API Agent PUT/cancelFPs/{fuelingPointID}
-                      IFSF Mobile Payment API Agent PUT/FPTransaction/{fuelingPointID}
-                      IFSF Mobile Payment API Agent PUT/freeFPs/{fuelingPointID}                      
-                      IFSF Mobile Payment API Agent PUT/reserveFPs/{fuelingPointID}
+APIs                  This data element is used in the following IFSF APIs. (invented Examples only not yet defined)
+                      PUT/approveFPs/{fuelingPointID}
+                      PUT/cancelFPs/{fuelingPointID}
+                      PUT/FPTransaction/{fuelingPointID}
+                      PUT/freeFPs/{fuelingPointID}                      
+                      PUT/reserveFPs/{fuelingPointID}
 
 YAML code:          - The text between brackets can be cut and paste into the Online Swagger editor (include a hyper link)
                     This is exmple YAML code for data element fuelingPointID
