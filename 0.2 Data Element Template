@@ -1,6 +1,6 @@
 Data Element Name:  elementName         Element name must comply with naming conventions as described in JSON Style Guide.
 Definition:         Element definition. This is a short consise definition of the data element.
-Description:        Elemen description. This is a full and unambiguous description of the object.
+Description:        Element description. This is a full and unambiguous description of the object.
 Alias:              An alphabetic list of aliases. Aliases are other eleemnt names which convey EXCATLy the same meaning
 
 Where used:         A list of all IFSF APIs and Data Objects that use this element is given in alphabetic order.
