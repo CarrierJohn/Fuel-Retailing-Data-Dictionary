@@ -1,10 +1,18 @@
-Data Element Name:  elementName         Element name must comply with naming conventions as described in JSON Style Guide.
+License:            This Data Element licensing falls within the Creative Commons Attribution 4.0 International Public 
+                    License described in 0.1 License
+
+Data Element Name:  elementName         Element name must comply with naming conventions as described in JSON Style Guide 
+                                        (see www.ifsf.org Standards Part 4-01).
 Definition:         Element definition. This is a short consise definition of the data element.
 Description:        Element description. This is a full and unambiguous description of the object.
-Alias:              An alphabetic list of aliases. Aliases are other eleemnt names which convey EXCATLy the same meaning
+Alias:              An alphabetic list of aliases. Aliases are other element names which convey EXACTLY the same meaning.
 
-Where used:         A list of all IFSF APIs and Data Objects that use this element is given in alphabetic order.
-Objects:            e.g. this element is used in data object "dataObject"
+Type:               This describes the JSON (or derived) data type for the element. E.g. String
+Content:            The allowed content of the Element is described as a regular expression (RegEx). 
+                    The JSON Schema specification recommends the regular expressions to be ECMA 262 compliant. 
+           
+Where used:         An alphabetic list of all Objects and APIs that use this element
+Objects:            e.g. this element is used in data object "dataObjectName"
                     etc.,
 APIs:               IFSF Wet Stock Management Agent GET /sites/{siteID}
                     IFSF Wet Stock Management Agent GET /sites/{siteID}/reconciliationReports
