@@ -14,8 +14,8 @@ Properties:         Each property within the Object follows the rules for an ele
                     - whether the property is required (i.e. mandatory)
                     - whether a default value exists and if so what the value is.
                     
-Sequence:           Properties are provide in the specification in a logical and common sequence, however following 
-                    JSON guidelines the sequence of properties is arbitary.
+Sequence:           Properties are provide in the specification in a logical and common sequence; however following 
+                    JSON guidelines the sequence of properties is arbitary (i.e. they can be in any order).
 
 Where used:         An alphabetic list of all other objects and APIs that use this element is given.
                     e.g. 
